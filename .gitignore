@@ -1,0 +1,6 @@
+#Visual Studio
+.vs/
+
+# Python Compiled
+__pycache__/
+*.py[cod]
