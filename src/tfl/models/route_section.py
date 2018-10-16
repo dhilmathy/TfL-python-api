@@ -1,6 +1,22 @@
 from msrest.serialization import Model
 
 class RouteSection(Model):
+    """RouteSection.
+
+    :param route_code:
+    :type route_code: str
+    :param name:
+    :type name: str
+    :param direction:
+    :type direction: str
+    :param origination_name:
+    :type origination_name: str
+    :param destination_name:
+    :type destination_name: str
+    :param originator:
+    :type originator: str
+    """
+
     _attribute_map = {
         'route_code': {'key': 'routeCode', 'type': 'str'},
         'name': {'key': 'name', 'type': 'str'},

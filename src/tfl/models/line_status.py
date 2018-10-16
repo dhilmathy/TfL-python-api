@@ -1,6 +1,28 @@
 from msrest.serialization import Model
 
 class LineStatus(Model):
+    """LineStatus.
+
+    :param id:
+    :type id: int
+    :param line_id:
+    :type line_id: str
+    :param status_severity:
+    :type status_severity: int
+    :param status_severity_description:
+    :type status_severity_description: str
+    :param reason:
+    :type reason: str
+    :param created:
+    :type created: datetime
+    :param modified:
+    :type modified: datetime
+    :param validity_periods:
+    :type validity_periods: list of :class:`ValidityPeriod <models.ValidityPeriod>`
+    :param disruption:
+    :type disruption: list of :class:`Disruption <models.Disruption>`
+    """
+
     _attribute_map = {
         'id': {'key': 'id', 'type': 'int'},
         'line_id': {'key': 'lineId', 'type': 'str'},

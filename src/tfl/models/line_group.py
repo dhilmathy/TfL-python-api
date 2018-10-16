@@ -1,6 +1,16 @@
 from msrest.serialization import Model
 
 class LineGroup(Model):
+    """LineGroup.
+
+    :param naptan_id_reference:
+    :type naptan_id_reference: str
+    :param station_atco_code:
+    :type station_atco_code: str
+    :param line_identifier:
+    :type line_identifier: list of str
+    """
+
     _attribute_map = {
         'naptan_id_reference': {'key': 'naptanIdReference', 'type': 'str'},
         'station_atco_code': {'key': 'stationActoCode', 'type': 'str'},

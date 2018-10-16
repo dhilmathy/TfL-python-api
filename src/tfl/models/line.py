@@ -1,6 +1,30 @@
 from msrest.serialization import Model
 
 class Line(Model):
+    """Line.
+
+    :param id:
+    :type id: str
+    :param name:
+    :type name: str
+    :param mode_name:
+    :type mode_name: str
+    :param disruptions:
+    :type disruptions: list of :class:`Disruption <models.Disruption>`
+    :param created:
+    :type created: datetime
+    :param modified:
+    :type modified: datetime
+    :param line_statuses:
+    :type line_statuses: list of :class:`LineStatus <models.LineStatus>`
+    :param route_sections:
+    :type route_sections: list of :class:`RouteSection <models.RouteSection>`
+    :param service_types:
+    :type service_types: list of :class:`ServiceType <models.ServiceType>`
+    :param crowding:
+    :type crowding: :class:`Crowding <models.Crowding>`
+    """
+
     _attribute_map = {
         'id': {'key': 'id', 'type': 'str'},
         'name': {'key': 'name', 'type': 'str'},

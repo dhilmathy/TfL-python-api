@@ -1,6 +1,24 @@
 from msrest.serialization import Model
 
 class TrainLoading(Model):
+    """TrainLoading.
+
+    :param line:
+    :type line: str
+    :param line_direction:
+    :type line_direction: str
+    :param platform_direction:
+    :type platform_direction: str
+    :param direction:
+    :type direction: str
+    :param naptan_to:
+    :type naptan_to: str
+    :param time_slice:
+    :type time_slice: str
+    :param value:
+    :type value: int
+    """
+
     _attribute_map = {
         'line': {'key': 'line', 'type': 'str'},
         'line_direction': {'key': 'lineDirection', 'type': 'str'},

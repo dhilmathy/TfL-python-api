@@ -1,6 +1,32 @@
 from msrest.serialization import Model
 
 class AffectedRoute(Model):
+    """AffectedRoute.
+
+    :param id:
+    :type id: str
+    :param line_id:
+    :type line_id: str
+    :param route_code:
+    :type route_code: str
+    :param name:
+    :type name: str
+    :param line_string:
+    :type line_string: str
+    :param direction:
+    :type direction: str
+    :param origination_name:
+    :type origination_name: str
+    :param destination_name:
+    :type destination_name: str
+    :param valid_to:
+    :type valid_to: datetime
+    :param valid_from:
+    :type valid_from: datetime
+    :param route_section_naptan_entry_sequence:
+    :type route_section_naptan_entry_sequence: list of :class:`RouteSectionNaptanEntrySequence <models.RouteSectionNaptanEntrySequence>`
+    """
+
     _attribute_map = {
         'id': {'key': 'id', 'type': 'str'},
         'line_id': {'key': 'lineId', 'type': 'str'},

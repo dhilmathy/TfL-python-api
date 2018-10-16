@@ -1,6 +1,22 @@
 from msrest.serialization import Model
 
 class ApiError(Model):
+    """ApiError.
+
+    :param timestamp_utc:
+    :type timestamp_utc: datetime
+    :param exception_type:
+    :type exception_type: str
+    :param http_status_code:
+    :type http_status_code: int
+    :param http_status:
+    :type http_status: str
+    :param relative_uri:
+    :type relative_uri: str
+    :param message:
+    :type message: str
+    """
+
     _attributes_map = {
         'timestamp_utc': {'key': 'timestampUtc', 'type': 'iso-8601'},
         'exception_type': {'key': 'exceptionType', 'type': 'str'},

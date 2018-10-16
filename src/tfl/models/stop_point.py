@@ -1,6 +1,62 @@
 from msrest.serialization import Model
 
 class StopPoint(Model):
+    """StopPoint.
+
+    :param naptan_id:
+    :type naptan_id: str
+    :param platform_name:
+    :type platform_name: str
+    :param indicator:
+    :type indicator: str
+    :param stop_letter:
+    :type stop_letter: str
+    :param modes:
+    :type modes: list of str
+    :param ics_code:
+    :type ics_code: str
+    :param sms_code:
+    :type sms_code: str
+    :param stop_type:
+    :type stop_type: str
+    :param station_naptan:
+    :type station_naptan: str
+    :param accessibility_summary:
+    :type accessibility_summary: str
+    :param hub_naptan_code:
+    :type hub_naptan_code: str
+    :param lines:
+    :types lines: list of :class:`Line <models.Line>`
+    :param line_group:
+    :type line_group: list of :class:`LineGroup <models.LineGroup>`
+    :param line_mode_group:
+    :type line_mode_group: list of :class:`LineModeGroup <models.LineModeGroup>`
+    :param full_name:
+    :type full_name: str
+    :param naptan_mode:
+    :type naptan_mode: str
+    :param status:
+    :type status: str
+    :param id:
+    :type id: str
+    :param url:
+    :type url: str
+    :param common_name:
+    :type common_name: str
+    :param distance:
+    :type distance: int
+    :param place_type:
+    :type place_type: str
+    :param additional_properties:
+    :type additional_properties: list of :class:`AdditionalProperties <models.AdditionalProperties>`
+    :param children_urls:
+    :type children_urls: list of str
+    :param lat:
+    :type lat: int
+    :param lon:
+    :type lon: int
+    """
+
     _attribute_map = {
         'naptan_id': {'key': 'naptanId', 'type': 'str'},
         'platform_name': {'key': 'platformName', 'type': 'str'},

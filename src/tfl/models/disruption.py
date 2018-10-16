@@ -1,6 +1,32 @@
 from msrest.serialization import Model
 
 class Disruption(Model):
+    """Disruption.
+
+    :param category:
+    :type category: str
+    :param type:
+    :type type: str
+    :param category_description:
+    :type category_description: str
+    :param description:
+    :type description: str
+    :param summary:
+    :type summary: str
+    :param additional_info:
+    :type additional_info: str
+    :param created:
+    :type created: datetime
+    :param last_update:
+    :type last_update: datetime
+    :param affected_routes:
+    :type affected_routes: list of :class:`AffectedRoute <models.AffectedRoute>`
+    :param affected_stops:
+    :type affected_stops: list of :class:`StopPoint <models.StopPoint>`
+    :param closure_text:
+    :type closure_text: str
+    """
+
     _attribute_map = {
         'category': {'key': 'category', 'type': 'str'},
         'type': {'key': 'type', 'type': 'str'},

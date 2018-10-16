@@ -5,6 +5,11 @@ from .rest_client import RestClient
 from . import models
 
 class Client:
+    """Client
+
+    :param ApiToken api_token: API token to access TfL unified API
+    """
+
     def __init__(self, api_token):
         self.client = RestClient(api_token)
         client_models = {k: v for k, v in models.__dict__.items() if isinstance(v, type)}

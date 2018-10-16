@@ -1,6 +1,16 @@
 from msrest.serialization import Model
 
 class ValidityPeriod(Model):
+    """ValidityPeriod.
+
+    :param from_date:
+    :type from_date: datetime
+    :param to_date:
+    :type to_date: datetime
+    :param is_now:
+    :type is_now: bool
+    """
+
     _attribute_map = {
         'from_date': {'key': 'fromDate', 'type': 'iso-8601'},
         'to_date': {'key': 'toDate', 'type': 'iso-8601'},
