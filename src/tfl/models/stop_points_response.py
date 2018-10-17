@@ -13,7 +13,7 @@ class StopPointsResponse(Model):
     :type page: int
     """
 
-    _attributes_map = {
+    _attribute_map = {
         'stop_points': { 'key': 'stopPoints', 'type': '[StopPoint]'},
         'page_size': { 'key': 'pageSize', 'type': 'int'},
         'total': { 'key': 'total', 'type': 'int'},

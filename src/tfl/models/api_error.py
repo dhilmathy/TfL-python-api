@@ -17,7 +17,7 @@ class ApiError(Model):
     :type message: str
     """
 
-    _attributes_map = {
+    _attribute_map = {
         'timestamp_utc': {'key': 'timestampUtc', 'type': 'iso-8601'},
         'exception_type': {'key': 'exceptionType', 'type': 'str'},
         'http_status_code': {'key': 'httpStatusCode', 'type': 'int'},

@@ -14,5 +14,7 @@ endpoints = {
     
     'stopPointMetaModes': 'StopPoint/Meta/Modes',
     'stopPointById': 'StopPoint/{0}',
-    'stopPointByMode': 'StopPoint/Mode/{0}'
+    'stopPointByMode': 'StopPoint/Mode/{0}',
+
+    'arrivalsByLineId': 'Line/{0}/Arrivals'
 }

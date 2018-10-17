@@ -9,7 +9,7 @@ class RouteSectionNaptanEntrySequence(Model):
     :type stop_point: :class:`StopPoint <models.StopPoint>`
     """
 
-    _attributes_map = {
+    _attribute_map = {
         'ordinal': {'key': 'ordinal', 'type': 'int'},
         'stop_point': {'key': 'stopPoint', 'type': 'StopPoint'}
     }
