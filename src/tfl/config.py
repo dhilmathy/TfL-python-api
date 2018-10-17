@@ -10,5 +10,9 @@ endpoints = {
     'routeByLineId': 'Line/{0}/Route',
     'routeByMode': 'Line/Mode/{0}/Route',
     'lineDisruptionsByLineId': 'Line/{0}/Disruption',
-    'lineDisruptionsByMode': 'Line/Mode/{0}/Disruption'
+    'lineDisruptionsByMode': 'Line/Mode/{0}/Disruption',
+    
+    'stopPointMetaModes': 'StopPoint/Meta/Modes',
+    'stopPointById': 'StopPoint/{0}',
+    'stopPointByMode': 'StopPoint/Mode/{0}'
 }

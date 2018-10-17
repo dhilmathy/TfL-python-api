@@ -13,6 +13,7 @@ from .route_section import RouteSection
 from .route_section_naptan_entry_sequence import RouteSectionNaptanEntrySequence
 from .service_type import ServiceType
 from .stop_point import StopPoint
+from .stop_points_response import StopPointsResponse
 from .train_loading import TrainLoading
 from .validity_period import ValidityPeriod
 
@@ -32,6 +33,7 @@ __all__ = [
     'RouteSectionNaptanEntrySequence',
     'ServiceType',
     'StopPoint',
+    'StopPointsResponse',
     'TrainLoading',
     'ValidityPeriod'
 ]

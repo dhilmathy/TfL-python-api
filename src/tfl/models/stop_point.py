@@ -49,6 +49,8 @@ class StopPoint(Model):
     :type place_type: str
     :param additional_properties:
     :type additional_properties: list of :class:`AdditionalProperties <models.AdditionalProperties>`
+    :param children:
+    :type children: list of :class:`StopPoint <models.StopPoint>`
     :param children_urls:
     :type children_urls: list of str
     :param lat:
@@ -81,7 +83,7 @@ class StopPoint(Model):
         'distance': {'key': 'distance', 'type': 'int'},
         'place_type': {'key': 'placeType', 'type': 'str'},
         'additional_properties': {'key': 'additionalProperties', 'type': '[AdditionalProperties]'},
-        #'children': {'key': 'children', 'type': '[Child]'},
+        'children': {'key': 'children', 'type': '[StopPoint]'},
         'children_urls': {'key': 'childrenUrls', 'type': '[str]'},
         'lat': {'key': 'lat', 'type': 'int'},
         'lon': {'key': 'lon', 'type': 'int'}

@@ -74,3 +74,22 @@ class Client:
         if response.status_code is not 200:
             return self._deserialize('[ApiError]', response)
         return self._deserialize('[Disruption]', response)
+
+
+    def get_stop_points_by_id(self, id):
+        response = self.client.send_request(endpoints['stopPointById'].format(id))
+        if response.status_code is not 200:
+            return self._deserialize('[ApiError]', response)
+        return self._deserialize('StopPoint', response)
+    
+    def get_stop_points_by_mode(self, mode):
+        response = self.client.send_request(endpoints['stopPointByMode'].format(mode))
+        if response.status_code is not 200:
+            return self._deserialize('[ApiError]', response)
+        return self._deserialize('StopPointsResponse', response)
+
+    def get_stop_point_meta_modes(self):
+        response = self.client.send_request(endpoints['stopPointMetaModes'])
+        if response.status_code is not 200:
+            return self._deserialize('[ApiError]', response)
+        return self._deserialize('[Mode]', response)
