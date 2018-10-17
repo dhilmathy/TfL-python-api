@@ -9,6 +9,8 @@ from .line_mode_group import LineModeGroup
 from .line_status import LineStatus
 from .mode import Mode
 from .passenger_flow import PassengerFlow
+from .prediction import Prediction
+from .prediction_timing import PredictionTiming
 from .route_section import RouteSection
 from .route_section_naptan_entry_sequence import RouteSectionNaptanEntrySequence
 from .service_type import ServiceType
@@ -29,6 +31,8 @@ __all__ = [
     'LineStatus',
     'Mode',
     'PassengerFlow',
+    'Prediction',
+    'PredictionTiming',
     'RouteSection',
     'RouteSectionNaptanEntrySequence',
     'ServiceType',

@@ -29,7 +29,7 @@ class Disruption(Model):
 
     _attribute_map = {
         'category': {'key': 'category', 'type': 'str'},
-        'type': {'key': 'type', 'type': 'str'},
+        'disruption_type': {'key': 'type', 'type': 'str'},
         'category_description': {'key': 'categoryDescription', 'type': 'str'},
         'description': {'key': 'description', 'type': 'str'},
         'summary': {'key': 'summary', 'type': 'str'},
@@ -41,12 +41,12 @@ class Disruption(Model):
         'closure_text': {'key': 'closureText', 'type': 'str'}
     }
 
-    def __init__(self, category=None, type=None, category_description=None, description=None,
+    def __init__(self, category=None, disruption_type=None, category_description=None, description=None,
                  summary=None, additional_info=None, created=None, last_update=None,
                  affected_routes=None, affected_stops=None, closure_text=None):
         super(Disruption, self).__init__()
         self.category = category
-        self.type = type
+        self.disruption_type = disruption_type
         self.category_description = category_description
         self.description = description
         self.summary = summary
