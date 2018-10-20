@@ -1,5 +1,8 @@
 import requests
-import urllib.parse
+try:
+    from urllib.parse import urlencode
+except ImportError:
+    from urllib import urlencode
 from .config import base_url
 
 class RestClient():
@@ -19,4 +22,4 @@ class RestClient():
             params = {}
         if self.api_token is not None:
             params.update(self.api_token)
-        return urllib.parse.urlencode(params)
+        return urlencode(params)

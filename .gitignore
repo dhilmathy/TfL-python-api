@@ -4,3 +4,12 @@
 # Python Compiled
 __pycache__/
 *.py[cod]
+
+# Python distribution
+build/
+dist/
+*.egg-info
+.pypirc
+
+# Test scripts
+src/test*.py
