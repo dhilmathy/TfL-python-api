@@ -1,8 +1,16 @@
+[![PyPi Version](https://img.shields.io/pypi/v/sfctl.svg)](https://pypi.org/project/tflunifiedapi/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/sfctl.svg)](https://pypi.org/project/tflunifiedapi/)
+[![License](https://img.shields.io/pypi/l/sfctl.svg)](https://github.com/dhilmathy/TfL-python-api/blob/master/LICENSE)
+
 # TfL-python-api
 
 This repository contains Python APIs for interacting with Transport for London (TfL). 
 
 Transport for London (TfL) Unified API is released [here](https://api.tfl.gov.uk/) is for open data users to use in their own software and services. 
+
+## Installation
+
+```pip install tflunifiedapi```
 
 ## Get Started
 
